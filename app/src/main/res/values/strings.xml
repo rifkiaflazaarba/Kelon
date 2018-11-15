@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kelon</string>
+    <string name="nav_beranda">Beranda</string>
+    <string name="nav_filter">Filter</string>
+    <string name="nav_akun">Saya</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

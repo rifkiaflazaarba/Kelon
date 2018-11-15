@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFF">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:orientation="horizontal"
+        android:background="#222222"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:background="#222222"
+            android:tint="#FFFF"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24dp"
+            android:textColor="#FFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Registrasi"/>
+
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/fullname"
+            android:maxLength="20"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:singleLine="true"
+            android:drawableRight="@drawable/ic_people_black_24dp"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="14"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/shortname"
+            android:maxLength="14"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:hint="Nama Panggilan"
+            android:singleLine="true"
+            android:drawableRight="@drawable/ic_people_black_24dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:singleLine="true"
+            android:drawableRight="@drawable/ic_email_black_24dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_gravity="center"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:imeOptions="actionDone"
+            android:drawableRight="@drawable/ic_vpn_key_black_24dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:background="@drawable/white_borders"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="register"
+            android:textColor="#FFFF"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
