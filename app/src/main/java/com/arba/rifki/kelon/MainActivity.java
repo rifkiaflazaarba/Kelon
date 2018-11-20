@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 } else {
                     //cara peratama SharedPreference
                     SharedPreferences sharedPreferences = getSharedPreferences("Test", Context.MODE_PRIVATE);
-                    String dataUsername = sharedPreferences.getString("KEY_USERNAME", null);
+                    String dataUsername = sharedPreferences.getString("KEY_EMAIL", null);
                     String dataPassword = sharedPreferences.getString("KEY_PASSWORD", null);
 
                     if (! usernameEt.getText().toString().equalsIgnoreCase(dataUsername)) {
